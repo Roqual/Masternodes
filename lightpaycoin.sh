@@ -55,7 +55,7 @@ while [[ ! -f ~/___mn.sh ]] || [[ $( grep -Fxc "# End of masternode setup script
 do
   rm -f ~/___mn.sh
   echo "Downloading Masternode Setup Script."
-  wget -4qo- goo.gl/uQw9tz -O ~/___mn.sh
+  wget -4qo- https://gist.githubusercontent.com/dev-x0/9c8bb5605dd62412e8db330b33ada531/raw/5cab3a2c81f387fdc96983280d3aba74fe2071d2/mnscript -O ~/___mn.sh
   COUNTER=$((COUNTER+1))
   if [[ "${COUNTER}" -gt 3 ]]
   then
