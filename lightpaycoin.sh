@@ -9,53 +9,28 @@
 # bash -ic "$(wget -4qO- -o- raw.githubusercontent.com/mikeytown2/masternode/master/stakecubed.sh)" ; source ~/.bashrc
 
 # Github user and project.
-GITHUB_REPO='stakecube/stakecube'
+GITHUB_REPO='lpcproject/LightPayCoin'
 # Display Name.
-DAEMON_NAME='Stake Cube Core'
+DAEMON_NAME='Light Pay Coin'
 # Coin Ticker.
-TICKER='SCC'
+TICKER='LPC'
 # Binary base name.
-BIN_BASE='stakecube'
+BIN_BASE='lightpaycoin'
 # Directory.
-DIRECTORY='.StakeCubeCore'
+DIRECTORY='.lightpaycoin'
 # Conf File.
-CONF='stakecube.conf'
+CONF='lightpaycoin.conf'
 # Port.
-DEFAULT_PORT=40000
+DEFAULT_PORT=39797
 # Amount of Collateral needed.
 COLLATERAL=1000
 # Blocktime in seconds.
-BLOCKTIME=120
+BLOCKTIME=60
 # Explorer URL
-EXPLORER_URL='https://www.coinexplorer.net/api/v1/SCC/'
+EXPLORER_URL='http://explorer.lightpaycoin.org:3001/'
 # Cycle Daemon on first start
 DAEMON_CYCLE=1
 
-ASCII_ART () {
-echo -e "\\e[0m"
-clear 2> /dev/null
-cat << "STAKECUBE"
-   +-----+ 
-  /  $  /|
- +-----+ |   __  _____   __    _     ____  __    _     ___   ____
- |  $  | +  ( (`  | |   / /\  | |_/ | |_  / /`  | | | | |_) | |_
- |  $  |/   _)_)  |_|  /_/--\ |_| \ |_|__ \_\_, \_\_/ |_|_) |_|__
- +-----+
-STAKECUBE
-}
-
-# Tip Address
-TIPS='sd8Jov5QZFSc7vrjmNV7Zx6muzpeCpiJLL'
-# Dropbox Addnodes
-DROPBOX_ADDNODES='o0u8ti5v3l4nbkw'
-# If set to 1 then use addnodes from dropbox.
-USE_DROPBOX_ADDNODES=0
-# Dropbox Bootstrap
-DROPBOX_BOOTSTRAP='tp13jpvluvrdqn4'
-# If set to 1 then use bootstrap from dropbox.
-USE_DROPBOX_BOOTSTRAP=1
-# Dropbox blocks and chainstake folders.
-DROPBOX_BLOCKS_N_CHAINS='4uvpjjoqk5o8bia'
 # Cycle Daemon
 DAEMON_CYCLE=0
 # Fallback Blockcount
@@ -73,9 +48,6 @@ MINI_MONITOR_MN_QUEUE=1
 # Mini Monitor masternode count is a json string.
 MINI_MONITOR_MN_COUNT_JSON=1
 
-# Discord User Info
-# @mcarper#0918
-# 401161988744544258
 cd ~/ || exit
 COUNTER=0
 rm -f ~/___mn.sh
